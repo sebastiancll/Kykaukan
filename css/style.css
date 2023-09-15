@@ -1,0 +1,101 @@
+
+/*Fuentes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/typo-round');
+
+ /*configuracion general*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #E6DBAC;
+    display: inline-block;
+    font-family: 'Mali', cursive;
+}
+
+/*Header*/
+
+.header>div{
+
+    display: flex;
+    background-color: #C95E1F;
+    width: 100vw;
+    height: 15ch;
+    justify-content: center;
+}
+
+.header .text{
+    font-family: 'Typo Round Bold Demo', sans-serif;
+    font-size: 50px;
+    padding-top: 10px;
+    text-align: center;
+    color: #E6DBAC;
+}
+
+.header .menu {
+    position: relative;
+}
+
+.header .menu .fa-solid{
+    position: absolute;
+    padding: 50px;
+    left:200px;
+}
+
+.header>div>i:hover{
+    color: #543a35;
+    transition: all .3s;
+}
+
+
+/*barra de navegacion*/
+
+.navegacion{
+    background-color: #543a35;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 4ch;
+}
+
+.navegacion li{
+    position: relative;
+    display: inline-block;
+}
+
+.navegacion div{
+
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.navegacion div>li>a{
+    list-style: none;
+    text-decoration: none;
+    color: #E6DBAC;
+}
+
+.navegacion>div>li>a:hover {
+    color: #C95E1F;
+    transition: all .3s;
+}
+
+/*Banner estatico*/
+
+.banner {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.banner>div>a>img{
+height: 350px;
+width: 900px;
+border-radius: 20px;
+
+}
