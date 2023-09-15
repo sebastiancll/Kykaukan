@@ -12,121 +12,144 @@
 
 body{
     background-color: #E6DBAC;
-    display: inline-block;
-    font-family: 'Mali', cursive;
+    font-family: 'Mali';
 }
+/**Logo**/
 
-/*Header*/
 
-.header>div{
+/**Header**/
 
+.header {
+    background-color: #c95e1f;
+    height: 100px;
+    width: 100%;;
+    align-items: center;
+}
+.header>header>div{
     display: flex;
-    background-color: #C95E1F;
-    width: 100%;
-    height: 15ch;
     justify-content: center;
 }
+.header .text .logo{
+    width: 80px;
+    height: 75px;
+    margin: 10px;
+    padding-right: 20px;
+}
 
-.header .text{
-    font-family: 'Typo Round Bold Demo', sans-serif;
-    font-size: 50px;
-    padding-top: 10px;
-    text-align: center;
+.header .text>h1{
+    justify-content: center;
+    font-size: 80px;
     color: #E6DBAC;
+    font-family: 'Typo Round Bold Demo', sans-serif;
 }
-/*barra de navegacion*/
 
-.navegacion{
-    background-color: #543a35;
+/**Barra de navegacion**/
+
+.navegacion {
     position: absolute;
-    display: inline-block;
+    background-color: #543a35;
     width: 100%;
-    height: 4ch;
+    height: 6ch;
 }
 
-.navegacion li{
-    position: relative;
-    display: inline-block;
-}
-
-.navegacion div{
-
-    padding-top: 10px;
+.navegacion .lista {
     display: flex;
     justify-content: space-around;
-    font-size: 20px;
+    padding-top: 8px;
+    list-style: none;
 }
 
-.navegacion div>li>a{
-    list-style: none;
+.navegacion .lista li>a{
     text-decoration: none;
     color: #E6DBAC;
+    font-size: 25px;
+    font-family: 'Typo Round Bold Demo', sans-serif;
 }
 
 .navegacion>div>li>a:hover {
-    color: #C95E1F;
     transition: all .3s;
+    color: #c95e1f;
 }
 
-/*Banner estatico*/
+/**Banner estatico**/
 
 .banner {
     display: flex;
+    align-content: center;
     justify-content: center;
     padding-top: 100px;
+    width: 100%;
+    margin-bottom: 80px;
 }
 
 .banner>div>a>img{
 height: 350px;
 width: 900px;
 border-radius: 20px;
-
 }
+ /**promesa**/
 
-/*CONTENIDO1*/
-
-.content{
+ .promesa{
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 10px;
-    margin: 100px;
-}
+    justify-content: center;
+    padding-bottom: 20px;
+ }
 
-.content>div>p {
-    color: #543a35;
-    font-size: 25px;
+ .promesa .text {
     text-align: center;
-    background-color: #c7be96;
-    border-radius: 30px;
-    border: solid 20px #c7be96;
-}
-.content>div {
-    padding-left: 20px;
-}
+    color: #c95e1f;
+ }
 
-
-/*VISION*/
-
-.vision {
-    display: flex;
-    width: 100%;
-    padding-left: 90px;
-    background-color: #C95E1F;
-}
-
-.vision h2{
+ .promesa .text>h2{
     font-size: 80px;
-    display: inline-block;
-    justify-content: space-around;
-    color: #5E6B15;
-}
+ }
 
-.vision p {
-    float: right;
-    padding-left: 70px;
-    text-align: center;
-    align-content: center;
-    padding-top: 20px;
-    color: #543a35;
+ .promesa .text>p{
     font-size: 20px;
-}
+    color: #543a35;
+ }
+
+ /**Vision y proposito**/
+
+ .vision .contenido{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 250px;
+    padding-right: 200px;
+    text-align: center;
+ }
+
+ .vision>div>div>h2{
+    color: #c95e1f;
+    font-size: 80px;
+ }
+
+ .vision>div>div>p{
+    font-size: 20px;
+    color: #543a35;
+ }
+
+ .vision .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+ /**proposito**/
+
+ .proposito{
+    display: flex;
+    justify-content: center;
+ }
+
+ .proposito .text>h2{
+    font-size: 80px;
+    color: #c95e1f;
+ }
+
+ .proposito .text>p{
+    font-size: 20px;
+    color: #543a35;
+    text-align: center;
+ }
