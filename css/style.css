@@ -14,8 +14,6 @@ body{
     background-color: #E6DBAC;
     font-family: 'Mali';
 }
-/**Logo**/
-
 
 /**Header**/
 
@@ -60,15 +58,48 @@ body{
 }
 
 .navegacion .lista li>a{
+    display: block;
     text-decoration: none;
     color: #E6DBAC;
     font-size: 25px;
     font-family: 'Typo Round Bold Demo', sans-serif;
 }
 
-.navegacion>div>li>a:hover {
+.navegacion>ul>li>a:hover {
     transition: all .3s;
     color: #c95e1f;
+}
+
+/**Submenu**/
+
+.submenu {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+    background: #c95e1f ;
+    align-content: center;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #543a35;
+    text-decoration: none;
+}
+
+.lista li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenu li a:hover  {
+    color: #543a35;
+    transition: all .3s;
 }
 
 /**Banner estatico**/
@@ -152,4 +183,28 @@ border-radius: 20px;
     font-size: 20px;
     color: #543a35;
     text-align: center;
+ }
+
+/**Necesidad**/
+
+ .necesidad{
+    margin-top: 80px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    background-color: #d3c37e;
+ }
+
+ .necesidad .title>h1{
+    position: relative;
+    font-size: 80px;
+    -webkit-text-stroke: 1px #c95e1f;
+    color: #E6DBAC;
+ }
+
+ .necesidad .text>p{
+    text-align: center;
+    font-size: 25px;
+    color: #543a35;
+    padding-top: 20px;
  }
